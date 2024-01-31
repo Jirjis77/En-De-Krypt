@@ -8,7 +8,7 @@ builder.Services.AddCors(policyBuilder =>
 var app = builder.Build();
 app.UseCors();
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "!");
 
 // Endpoint för kryptering
 app.MapGet("/encrypt", (string name, int shift) => EncryptName(name, shift));
