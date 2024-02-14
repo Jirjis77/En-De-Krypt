@@ -44,3 +44,4 @@ string DecryptName(string name, int shift)
 {
     return EncryptName(name, -shift);
 }
+
